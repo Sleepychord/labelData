@@ -1,0 +1,11 @@
+task 1. discover hidden patterns (social gene)—deterministic patterns (a very high probability to trigger something with a confidence >95%) for some social phenomena 
+
+我认为这个问题反而与influence maximization problem更像一点（《Extracting Influential Nodes for Information Diffusion on a Social Network》）。如果我们使用研究这个问题的一些模型，比如Independent Cascade Model之类的对一个爆发前的网络状态进行模拟，那么一定会出现成功爆发和不成功爆发的两种情况。可以想象不成功很大程度上是一些threshold的点或结构限制住了。
+如果我们定义一些指标（比如在这个点试图传播但是失败的次数最多等）可以把这些点找出来，然后连成子图是否就可以说是dominant patterns 呢？如果有多条传播路径，每条路径多找几个点取交集是否有足够说服力？
+
+验证效果的方法：
+如果我们有同一个图的若干次信息爆发或innovation diffusion成功或不成功的数据，那么就比较每次找出的dominant patterns的重合度即可。
+
+Task2:
+knock out可以看成是一种不需要数据的验证方法。如果要换一个词的话，可以用图的（dissemination）kernel 来代替gene？用“屏蔽”shield or mask……？
+之前facebook的那篇应该是《Facebook Use Predicts Declines in Subjective Well-Being in Young Adults》，他用了“ experience-sampling”的方法。就是对实验者做真实实验，让他们记录下来自己的感受什么的。
