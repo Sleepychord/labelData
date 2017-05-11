@@ -195,7 +195,7 @@ class Example(Frame):
         f = open(filename, "rU")
         text = f.read()
         self.fileName = filename
-        return text
+        return '\n'.join(re.split(r'[\.\?\!]',text))
 
     def setFont(self, value):
         _family="Helvetica"
